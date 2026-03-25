@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MainWIndow {
-    public static void MainWindow(String[] args) {
+    public MainWIndow() {
         JFrame frame = new JFrame("Main Page");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
@@ -14,12 +14,12 @@ public class MainWIndow {
         frame.add(title, BorderLayout.NORTH);
 
         JPanel grid = new JPanel(new GridLayout(2, 2));
-        grid.add(new JButton("Research players"));
-        grid.add(new JButton("Ai Assistant"));
-        grid.add(new JButton("Notifications Center"));
-        grid.add(new JButton("Weekly Predicted"));
+        grid.add(new RoundButton("Research players"));
+        grid.add(new RoundButton("Ai Assistant"));
+        grid.add(new RoundButton("Notifications Center"));
+        grid.add(new RoundButton("Weekly Predicted"));
         frame.add(grid, BorderLayout.CENTER);
-
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 
