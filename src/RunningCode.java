@@ -1,4 +1,4 @@
-public class runningFile {
+public class RunningCode {
     public static void main(String args[]) {
-        MainWindow start = new MainWindow();
+        MainWIndow start = new MainWIndow();
     }}

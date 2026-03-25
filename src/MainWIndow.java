@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class MainWindow {
-    public static void main(String[] args) {
+public class MainWIndow {
+    public static void MainWindow(String[] args) {
         JFrame frame = new JFrame("Main Page");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
@@ -22,4 +22,5 @@ public class MainWindow {
 
         frame.setVisible(true);
     }
+
 }
